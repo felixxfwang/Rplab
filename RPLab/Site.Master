@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="RPLab.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>电波传播实验室</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="SiteCss/Site.css" />
+    <script type="text/javascript" src="Scripts/jquery-1.7.1.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <img src="Images/site/logo.png" />
+        </div>
+        <div class="navigation">
+            <div class="float-left">
+                <ul class="cate">
+                    <li><a href="Home.aspx">首页</a></li>
+                    <li><a href="<%=ViewState["LabIntro"] %>">实验室概况</a></li>
+                    <li><a href="<%=ViewState["Teachers"] %>">学术梯队</a></li>
+                    <li><a href="<%=ViewState["Students"] %>">人才培养</a></li>
+                    <li><a href="<%=ViewState["Research"] %>">科学研究</a></li>
+                    <li><a href="<%=ViewState["StudentWork"] %>">学生工作</a></li>
+                    <li><a href="<%=ViewState["Exchange"] %>">交流合作</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="body">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <div>地址：武汉市武昌区珞珈山 邮编：430072 电话：027-xxxxxxx</div>
+            <div>Copyright © 2011-2013 武汉大学 电波传播实验室|无线电探测研究中心 版权所有 </div>
+            <div>无线电探测研究中心学生管理委员会网络部 维护制作  <a href="mailto:xrwan@126.com">管理员邮箱</a></div>
+        </div>
+    </form>
+</body>
+</html>

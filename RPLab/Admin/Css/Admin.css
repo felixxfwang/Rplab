@@ -1,0 +1,153 @@
+﻿.content {
+    border: solid 1px #175AA8;
+    margin-top: 10px;
+}
+
+#account-header {
+    font-family: '宋体';
+    background-color: #175AA8;
+    height: 40px;
+    border: 1.5px #175AA8 solid;
+    padding-top: 25px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+#account {
+    display: table;
+    margin-left: 10px;
+    padding-bottom: 30px;
+}
+
+    #account .item {
+        display: table-row;
+        padding: 10px;
+    }
+
+        #account .item .validator, #account .item .label, #account .item input {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        #account .item .label {
+            text-align: right;
+        }
+
+        #account .item .input > input {
+            border: 1px solid #175AA8;
+            width: 250px;
+        }
+
+        #account .item select, #account .item textarea {
+            border: 1px solid #175AA8;
+            font-family: '微软雅黑';
+            display: table-cell;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        #account .item textarea {
+            width: 500px;
+            height: 400px;
+        }
+
+        #account .item .validator {
+            font-family: '宋体';
+            color: red;
+        }
+
+        #account .item span input {
+            width: 20px;
+        }
+
+        #account .item input.form-button {
+            width: 80px;
+            font-size: 14px;
+            letter-spacing: .2em;
+            cursor: pointer;
+            background-color: #175AA8;
+            color: white;
+            border-radius: 3px;
+            border: 1px solid #175AA8;
+        }
+
+.button {
+    width: 80px;
+    font-size: 14px;
+    letter-spacing: .2em;
+    cursor: pointer;
+    background-color: #175AA8;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid #175AA8;
+    float: right;
+    margin: 10px;
+}
+
+#preview {
+    text-align: center;
+}
+
+    #preview img {
+        max-width: 800px;
+        width: expression(this.width > 800?"800px":true);
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.manage-nav {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.manage-button {
+    display: block;
+    border: solid 1px #175AA8;
+    width: 80px;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: #175AA8;
+}
+
+.manage-button-click {
+    background: #175AA8;
+    color: white;
+}
+
+.manage-box {
+    display: inline-block;
+    width: 880px;
+}
+
+.btn-delete {
+    display: block;
+    border: solid 1px #175AA8;
+    width: 70px;
+    padding: 3px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: #175AA8;
+    font-size: 14px;
+}
+
+    .btn-delete:hover {
+        background: #175AA8;
+        color: white;
+    }
+
+.manage-image-box {
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+    .manage-image-box img {
+        width: 100px;
+        height: 60px;
+    }

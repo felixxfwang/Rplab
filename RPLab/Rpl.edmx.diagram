@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e733a94e94524037babda4f21394dc21" Name="Diagram1">
+        <EntityTypeShape EntityType="rpldbModel.Article" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="rpldbModel.Account" Width="1.5" PointX="3.125" PointY="0.875" />
+        <EntityTypeShape EntityType="rpldbModel.Link" Width="1.5" PointX="5.375" PointY="1" />
+        <EntityTypeShape EntityType="rpldbModel.NewsImage" Width="1.5" PointX="2.875" PointY="3.125" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="RPLab.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>电波传播实验室-管理中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../SiteCss/Site.css" />
+    <link rel="stylesheet" type="text/css" href="Css/Admin.css" />
+    <script type="text/javascript" src="../Scripts/jquery-1.7.1.min.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <asp:ContentPlaceHolder ID="adminHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form2" runat="server">
+        <div class="header">
+            <img src="../Images/site/logo.png" />
+        </div>
+        <div class="navigation">
+            <div class="float-left">
+                <ul class="cate">
+                    <li><a href="Manage.aspx">管理中心</a></li>
+                    <li><a href="AddArticle.aspx?type=news">新闻</a></li>
+                    <li><a href="AddArticle.aspx?type=notice">通知公告</a></li>
+                    <li><a href="AddLink.aspx">友情链接</a></li>
+                    <li><a href="AddNewsPic.aspx">新闻图片</a></li>
+                    <li><a href="AddIntroArticle.aspx">修改介绍</a></li>
+                    <li><a href="Center.aspx">修改密码</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="body">
+            <asp:ContentPlaceHolder ID="adminContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <div>Copyright © 2011-2013 武汉大学 电波传播实验室|无线电探测研究中心 版权所有 </div>
+            <div>无线电探测研究中心学生管理委员会网络部 维护制作</div>
+        </div>
+    </form>
+</body>
+</html>
